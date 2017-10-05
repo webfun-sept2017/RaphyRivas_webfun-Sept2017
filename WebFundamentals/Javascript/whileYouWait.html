@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>While You Wait</title>
+  <script type="text/javascript">
+    var daysUntilMyBirthday = 60;
+    var str = " until my birthday.";
+    while(daysUntilMyBirthday > 0) {
+      if(daysUntilMyBirthday > 30) {
+        console.log(daysUntilMyBirthday + str + " Such a long time... :(" + '\n');
+      } else if(daysUntilMyBirthday < 30) {
+        console.log(daysUntilMyBirthday + str +  "I'm so excited! It's so close!" + '\n');
+      } else if(daysUntilMyBirthday <= 5) {
+        console.log(daysUntilMyBirthday + " UNTIL MY BIRTHDAY!!!!!" + '\n');
+      }
+      daysUntilMyBirthday--;
+    }
+  </script>
+</head>
+<body>
+
+</body>
+</html>

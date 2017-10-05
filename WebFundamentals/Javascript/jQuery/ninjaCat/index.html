@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ninja Cat</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    var imgArray = ["cat0", "cat1", "cat2", "cat3", "cat4", "ninja0", "ninja1", "ninja2", "ninja3", "ninja4"];
+    var imgNumber;
+    $("img").click(function(){
+      imgNumber = Math.floor((Math.random()*9) + 1);
+      console.log(imgNumber);
+      $(this).attr("src", "./img/"+imgArray[imgNumber]+".png");
+    });
+  });
+  </script>
+  <style>
+    img {
+      display: block;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <img src="./img/cat0.png" alt="">
+  <img src="./img/cat1.png" alt="">
+  <img src="./img/ninja0.png" alt="">
+  <img src="./img/ninja1.png" alt="">
+  <img src="./img/ninja2.png" alt="">
+</body>
+</html>

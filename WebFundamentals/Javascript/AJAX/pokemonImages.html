@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pokemon Images</title>
+  <style>
+    button {
+      outline: none;
+      padding: 20px;
+      background-color: blue;
+      color: white;
+      display: block;
+      margin: auto;
+    }
+
+    .center {
+      display: block;
+      margin: auto;
+    }
+  </style>
+  <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+  <script>
+    $(document).ready(function(){
+      $("#start_game").click(()=>{
+        var random = Math.floor(Math.random()*151 + 1);
+        // $.get(`http://pokeapi.co/api/v2/pokemon/${random}`, function success(response){
+        //   console.log(response.);
+        // }, "json");
+        $("img").attr("src", `http://pokeapi.co/media/img/${random}.png`);
+      });
+    });
+  </script>
+</head>
+<body>
+  <img class="center" src="" alt="">
+  <button class="center" id="start_game">Show Pokemon</button>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Add a User</title>
+  <style>
+    h1 {
+      border-bottom: 2px solid gray;
+    }
+  </style>
+  <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+
+  <script>
+    $(document).ready(function(){
+
+      $('button').click(function(){
+        event.preventDefault();
+        var fname = $("#first").val();
+        var lname = $("#second").val();
+        var email = $("#email").val();
+        var contact = $("#contact").val();
+      $("table").append('<tr><td class="fname">'+fname+'</td><td class="lname">'+lname+'</td><td class="email">'+email+'</td><td class="contact">'+contact+'</td></tr>');
+        console.log(fname);
+        $('input').val(null);
+      });
+    });
+  </script>
+</head>
+<body>
+  <table>
+    <tr class="title">
+      <td class="fname">First name</td>
+      <td class="lname">Last name</td>
+      <td class="email">Email address</td>
+      <td class="contact">Contact #</td>
+    </tr>
+  </table>
+  <br>
+  <br>
+  <h1>Add User</h1>
+  <form action="">
+    <label for="fname">First Name: </label>
+    <input type="text" name="form" id="first">
+    <label for="lname">Last Name: </label>
+    <input type="text" name="form" id="second">
+    <label for="email">Email Address: </label>
+    <input type="email" name="form" id="email">
+    <label for="contact">Contact No.: </label>
+    <input type="text" name="form" id="contact">
+    <button>Submit</button>
+  </form>
+</body>
+</html>

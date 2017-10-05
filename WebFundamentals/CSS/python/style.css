@@ -1,0 +1,148 @@
+.container {
+  width: 970px;
+  background-color: #2b5b84;
+  font-family: arial;
+}
+
+.header p{
+  color: white;
+  text-align: center;
+}
+
+.header img {
+  display: inline-block;
+  width: 350px;
+  height: auto;
+}
+
+.header .search {
+  display: inline-block;
+  float: right;
+}
+
+.search {
+  font-size: 13px;
+}
+
+.search a {
+  color: #C4B031;
+}
+
+.header input {
+  width: 150px;
+  height: 25px;
+  box-shadow: 1px 1px 5px #000;
+}
+
+.searchBox {
+  background-color: grey;
+  padding: 10px 40px;
+  border-radius: 5px;
+  margin-right: 10px;
+  box-shadow: 1px 1px 5px #000;
+}
+
+.navbar {
+  text-align: center;
+  margin: 50px 0 30px 0;
+  color: white;
+}
+
+.navigation {
+  display: inline;
+  background-color: #4087C4;
+  padding: 10px 40px;
+  width: 900px;
+  font-size: 25px;
+  margin:auto;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px black;
+}
+
+.navigation > li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 15px;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+}
+
+.arrow {
+  color: #C4B031;
+}
+
+.links {
+  display:inline-block;
+  width: 300px;
+  vertical-align: top;
+  line-height: 30px;
+  color: white;
+  font-size: 17px;
+}
+
+.links > ul {
+  list-style-type: none;
+    text-align: center;
+}
+
+.links ul li a {
+  color: white;
+}
+
+.paragraph {
+  display: inline-block;
+  width: 500px;
+  vertical-align: top;
+  text-align: center;
+  color: white;
+}
+
+.paragraph p {
+  margin-top: 0px;
+  font-size: 15px;
+}
+
+.paragraph ul {
+  list-style-type: none;
+  color: #C4B031;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.display {
+  display: inline-block;
+  width: 350px;
+  vertical-align: top;
+  text-align: center;
+}
+
+.display h3 {
+  border-top: 5px solid blue;
+}
+
+.secondary_content {
+  background-color: white;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 3px;
+  color: #4087C4;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul > li {
+    display: inline;
+    text-align: center;
+    margin-right: 40px;
+    font-size: 18px;
+}

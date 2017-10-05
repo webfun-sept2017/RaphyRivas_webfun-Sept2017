@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ninja Pictures</title>
+  <style>
+    img {
+      margin: 0 10px 10px 0;
+      cursor: pointer;
+    }
+    .display_inline {
+      display: inline-block;
+    }
+    button {
+      background-color: green;
+      border-radius: 6px;
+      border: none;
+      color: white;
+      padding: 20px;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+  </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('img').click(function(){
+      console.log('clicked!');
+      $(this).hide();
+    });
+    $('button').click(function(){
+      $('img').show();
+    });
+});
+  </script>
+</head>
+<body>
+    <p class="display_inline">1</p><img class="display_inline" src="http://via.placeholder.com/300x250">
+    <p class="display_inline">2</p><img class="display_inline" src="http://via.placeholder.com/300x250">
+    <p class="display_inline">3</p><img class="display_inline" src="http://via.placeholder.com/300x250">
+    <p class="display_inline">4</p><img class="display_inline" src="http://via.placeholder.com/300x250">
+    <p class="display_inline">5</p><img class="display_inline" src="http://via.placeholder.com/300x250">
+    <p class="display_inline">6</p><img class="display_inline" src="http://via.placeholder.com/300x250">
+    <p class="display_inline">7</p><img class="display_inline" src="http://via.placeholder.com/300x250">
+    <p class="display_inline">8</p><img class="display_inline" src="http://via.placeholder.com/300x250">
+    <button>Restore Pictures</button>
+  </div>
+</body>
+</html>
